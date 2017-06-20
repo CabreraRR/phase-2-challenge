@@ -25,27 +25,31 @@ module.exports = {
 		} else {
 			return "not a date";
 		}
+	},
+	snippet: function (string, maxlength) {
+		if (string.length > maxlength) {
+			return string.slice(0, maxlength) + "...";
+		}
+		if (string.length < maxlength) {
+			return string;
+		} else {
+			return "not a string";
+		}
+	},
+	numProps: function (obj) {
+		return Object.keys(obj).length;
 	}
-};
+}
 
 
-////get a snippet from text
-//
-//function snippet(string, maxlength) {
-//	if (string.length > maxlength) {
-//		console.log(string.slice(0, maxlength) + "...");
-//	} else {
-//		console.log(string);
-//	}
-//};
-//
+//get a snippet from text
+
+
+
 ////number of properties
 //
 //
-//function numProps(obj) {
-//	newObj = Object.keys(obj);
-//	console.log(newObj.length);
-//};
+
 //
 ////filter between
 //

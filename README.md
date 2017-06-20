@@ -60,10 +60,10 @@ snippet("Hello, world!", 20) // => "Hello, world!"
 
 #### Requirements
 
-- [ ] __10:__ A test using expected/valid inputs for the `snippet()` function is written in `tests.js`.
-- [ ] __10:__ A test using unexpected/invalid inputs for the `snippet()` function is written in `tests.js`.
-- [ ] __30:__ Correct implementation of the `snippet()` is defined in `functions.js`.
-- [ ] __10:__ Tests for `snippet()` are passing.
+- [x] __10:__ A test using expected/valid inputs for the `snippet()` function is written in `tests.js`.
+- [x] __10:__ A test using unexpected/invalid inputs for the `snippet()` function is written in `tests.js`.
+- [x] __30:__ Correct implementation of the `snippet()` is defined in `functions.js`.
+- [x] __10:__ Tests for `snippet()` are passing.
 
 ### Number of properties
 
