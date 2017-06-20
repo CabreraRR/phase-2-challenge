@@ -13,6 +13,11 @@ function snippet(string, maxlength){
 //number of properties
 
 
+function numProps(obj){
+  newObj = Object.keys(obj);
+  console.log(newObj.length);
+};
+
 //filter between
 
 function filterBetween(arr, min, max){
