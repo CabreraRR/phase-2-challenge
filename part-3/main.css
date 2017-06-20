@@ -1,0 +1,93 @@
+body {
+	margin: 0;
+}
+
+.top-bar {
+	margin: 0;
+	padding: 0;
+	display: inline;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	background: #f1f1f1;
+	width: 100vw;
+	height: 10vh;
+	border-bottom: 3px solid lightgrey;
+}
+.cart{
+	margin:25px;
+	background:grey;
+	color: white;
+	font-size: 1.5em;
+	
+}
+.side-nav {
+	margin: 0vh 0vh 0vh 0vh;
+	padding: 0;
+	width: 15vw;
+	background-color: #f1f1f1;
+	height: 90vh;
+	border: 3px solid lightgrey;
+	float: left;
+}
+
+ul li {
+	list-style-type: none;
+}
+
+li a {
+	color: black;
+	display: block;
+	padding: 10px 20px;
+	text-decoration: none;
+}
+
+li a:hover {
+	background: grey;
+	color: white;
+}
+
+.shelf {
+	margin-left: 20vw;
+	margin-top: 10vh;
+}
+
+.item {
+	height: 40px;
+	width: 70vw;
+	linbe-height: 40px;
+	font-size: 1.5em;
+	border: 1px solid grey;
+	line-height:1.5;
+	vertical-align: 50%;
+	padding-left: 15px;
+	margin-bottom: 20px;
+
+}
+
+.price {
+	margin-left: 900px
+}
+
+.add-to-cart {
+
+	text-decoration: none;
+	float: right;
+	margin-top:5px;
+	margin-bottom: 5px;
+	width: 5vw;
+	height: 30px;
+	background: #f1f1f1;
+	display: block;
+	outline: none;
+	border: none;
+	background: green;
+	color: white;
+	margin-right: 5px;
+}
+
+.add-to-cart:hover {
+	background: white;
+	color: green;
+	border: 1px solid green;
+}
