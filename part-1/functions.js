@@ -1,5 +1,5 @@
-//show a weekday
-module.exports = {
+
+module.exports = { //show a weekday
 	weekday: function (date) {
 		var day = new Date(date).getDay();
 		if (day == 0) {
@@ -26,7 +26,7 @@ module.exports = {
 			return "not a date";
 		}
 	},
-	snippet: function (string, maxlength) {
+	snippet: function (string, maxlength) { //get a snippet from text
 		if (string.length > maxlength) {
 			return string.slice(0, maxlength) + "...";
 		}
@@ -36,21 +36,23 @@ module.exports = {
 			return "not a string";
 		}
 	},
-	numProps: function (obj) {
+	numProps: function (obj) { //number of properties
+		if (Object.keys(obj).length > 0){
 		return Object.keys(obj).length;
+		} else{
+			return "no properties";
+		}
 	}
 }
 
 
-//get a snippet from text
 
 
 
-////number of properties
-//
-//
 
-//
+
+
+
 ////filter between
 //
 //function filterBetween(arr, min, max) {
