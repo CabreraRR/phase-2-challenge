@@ -1,4 +1,3 @@
-
 module.exports = { //show a weekday
 	weekday: function (date) {
 		var day = new Date(date).getDay();
@@ -37,30 +36,23 @@ module.exports = { //show a weekday
 		}
 	},
 	numProps: function (obj) { //number of properties
-		if (Object.keys(obj).length > 0){
-		return Object.keys(obj).length;
-		} else{
+		if (Object.keys(obj).length > 0) {
+			return Object.keys(obj).length;
+		} else {
 			return "no properties";
+		}
+	},
+	filterBetween: function(array, min, max) { //filter between
+		var newArr = [];
+		if (Array.isArray(array)){
+		for (var i = 0; i <= array.length; i++) {
+			if (array[i] > min && array[i] < max) {
+				newArr.push(array[i]);
+			};
+		};
+		return newArr;
+		} else {
+			return "unable to filter between"
 		}
 	}
 }
-
-
-
-
-
-
-
-
-
-////filter between
-//
-//function filterBetween(arr, min, max) {
-//	var newArr = [];
-//	for (var i = 0; i <= arr.length; i++) {
-//		if (arr[i] > min && arr[i] < max) {
-//			newArr.push(arr[i]);
-//		};
-//	};
-//	console.log(newArr);
-//};

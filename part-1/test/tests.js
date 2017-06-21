@@ -34,9 +34,25 @@ describe('functions', function () {
 			let numPropsResult = functions.numProps(char);
 			assert.equal(numPropsResult, '4');
 		});
-		it ('numProps should return "no properties"', function(){
+		it('numProps should return "no properties"', function () {
 			let numPropsResult = functions.numProps(10);
 			assert.equal(numPropsResult, 'no properties');
+		});
+	});
+	describe('filterBetween()', function () {
+		it('filterBetween should return the last number', function () {
+			let array = [1, 2, 3, 4, 5];
+			let min = 4;
+			let max = 100;
+			let filterBetweenResult = functions.filterBetween(array, min, max);
+			assert.equal(filterBetweenResult, '5');
+		});
+		it('filterBetween should return "unable to filter between"', function (){
+			let array = "yo quiero tacobell";
+			let min = 4;
+			let max = 100;
+			let filterBetweenResult = functions.filterBetween(array, min, max);
+			assert.equal(filterBetweenResult, "unable to filter between");
 		});
 	});
 });
