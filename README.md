@@ -166,8 +166,8 @@ Finding clients in state "Maryland"...
 
 #### Requirements
 
-- [ ] __40:__ `searchByName.js` script prints the client  `id` and `rep_name` for all clients whose `rep_name` starts with the provided `name` argument.
-- [ ] __40:__ `searchByState.js` script prints the client `id`, `rep_name`, `company`, `city`, and `state` that for all clients whose `state` matches the provided `state` argument.
+- [x] __40:__ `searchByName.js` script prints the client  `id` and `rep_name` for all clients whose `rep_name` starts with the provided `name` argument.
+- [x] __40:__ `searchByState.js` script prints the client `id`, `rep_name`, `company`, `city`, and `state` that for all clients whose `state` matches the provided `state` argument.
 
 ## Part 3: HTML layout for grocery store
 
