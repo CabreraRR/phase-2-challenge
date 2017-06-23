@@ -24,6 +24,7 @@ module.exports = { //show a weekday
 		} else {
 			return "not a date";
 		}
+		// should have set the days to an array and use the results of getDay to pull from the array the date
 	},
 	snippet: function (string, maxlength) { //get a snippet from text
 		if (string.length > maxlength) {

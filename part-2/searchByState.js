@@ -11,3 +11,4 @@ for(i = 0; i < clients.length; i++) {
     )
   }
 };
+//pretty sure I could do this better if I took the time to read documentation
